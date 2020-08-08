@@ -1,0 +1,90 @@
+<!-- tạo menu thả xuống -->
+
+
+
+
+<!DOCTYPE html>
+<HTML>
+<head>
+    <meta charset="utf-8"name="viewport" content="width=device-width,initial-scale=1">
+
+
+<style>
+ul{
+
+
+margin:0;
+padding :0;
+background-color: lightyellow;
+overflow:hidden;
+list-style-type: none;
+
+
+}
+li {
+    
+    float: left;
+    
+}
+ li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+ a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.content{
+    display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);;
+
+}
+.dropdown:hover .content{
+    display:block;
+}
+
+</style>
+
+
+</head>
+<body>
+  
+
+    
+    <ul>
+<li><a class="active" href="#">Home</a></li>
+<li><a href="#">New</a></li>
+<li><a href="#">Contact</a></li>
+<li class="dropdown"><a href="#" class="drop">Dropdown</a>
+<div class="content">
+
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+
+</div>
+
+
+
+</li>
+
+
+
+    </ul>
+
+    
+    
+</body>
+</HTML>

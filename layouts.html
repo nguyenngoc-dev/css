@@ -1,0 +1,155 @@
+<!--layout in website-->
+
+
+
+<DOCTYPE! html>
+
+<html>
+
+<head>
+<title>layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+*{
+box-sizing: border-box;
+}
+body{
+    margin:0;
+}
+.header{
+    background-color:cornsilk;
+    padding:30px;
+    text-align: center;
+}
+ul{
+
+
+margin:0;
+padding :0;
+background-color:gray;
+overflow:hidden;
+list-style-type: none;
+
+
+}
+li {
+    
+    float: left;
+    
+}
+ li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+ a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.content{
+    display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);;
+
+}
+.dropdown:hover .content{
+    display:block;
+}
+.first{
+width:30%;
+background-color: greenyellow;
+float:left;
+text-align: center;
+height:450px;
+
+
+}
+.second{
+    width:40%;
+background-color: indianred;
+float:left;
+
+height:450px;
+
+}
+.footer
+{
+   background-color: cornsilk;
+  padding-top: 470px;
+  padding-bottom: 20px;
+   text-align: center;
+   margin-top: 20px;
+
+
+}
+
+
+</style>
+</head>
+<body>
+    <div class="header">
+<h1>My website</h1>
+<p>layout in my website</p>
+</div>
+
+    
+   
+<ul>
+    <li><a class="active" href="#">Home</a></li>
+    <li><a href="#">New</a></li>
+    <li><a href="#">Contact</a></li>
+    <li class="dropdown"><a href="#" class="drop">Dropdown</a>
+    <div class="content">
+    
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    
+    </div>
+    </li>
+        </ul>
+        <div style="box-sizing:border-box;margin:0;">
+<div class="first">
+    <img alt="anh center" src="https://i.pinimg.com/736x/b9/9e/40/b99e402b823ce6754ddfd726dc99f6b8.jpg" 
+    width=450px height=450px  >
+   
+</div>
+
+<div class="second">
+
+<img alt="anh center" src="https://i.pinimg.com/originals/9d/60/22/9d6022f153768025ad37f51d89d29ece.jpg" 
+ width=600px height=450px  >
+    
+    </div>
+    <div class="first">
+        <img alt="anh center" src="https://i.pinimg.com/736x/b9/9e/40/b99e402b823ce6754ddfd726dc99f6b8.jpg" 
+        width=450px height=450px  >
+
+        
+        </div>
+
+
+
+        </div>
+    <div class="footer">
+End
+
+
+    </div>
+
+
+
+
+</body>
+</htm>
