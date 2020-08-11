@@ -1,0 +1,202 @@
+<!-- create facebook application login -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"name="viewport" content="width=device-width,initial-scale=1">
+<title>facebook login</title>
+<style>
+*{
+box-sizing: border-box;
+}
+body{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin:0;
+    background-color:rgb(226, 228, 229);
+}
+.header
+{
+    background-color: #4267b2;
+    border-bottom: 1px solid #29487d;
+    color: #fff;
+    width: 100%;
+    height:80px;
+    display: inline-block;
+    overflow: hidden;
+    
+
+}
+#face
+{
+font-size:30px; 
+margin-left:20%;
+padding-top:100px;
+
+
+
+}
+
+.fill
+{
+    display:inline-block;
+float:left;
+position: absolute;
+margin-left: 30%;
+overflow: hidden;
+
+
+
+}
+.fillout
+{border: 1px solid grey;
+   
+    
+}
+td{
+    font-size: small;
+}
+ .align
+{
+display: inline-block;
+position:relative ;
+left:170px;
+float:left;
+margin-right:218px;
+top:40px;
+
+
+}
+img
+{
+    width:100%;
+    position: relative;
+    border:1px solid dimgray;
+    box-shadow: 2px 2px lightblue;
+    transition: width 2s,height 2s, transform 2s;
+    animation: example 2s linear 1 2 ;
+}
+img:hover{
+    width:300px;
+    height:300px;
+    transform:rotate(360deg);
+
+ }
+ @keyframes example {
+     from{top:100px;left:100px;}
+     to{  top:500px; left:500px;}
+ }
+ .align h1{
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     top:-20px;
+     position: relative;
+ }
+ #sign
+ {
+    border:1px solid grey;
+    background-color:green;
+    border-radius: 5px;
+    padding:7px;
+    margin-top:20px;
+    width:150px;
+    color:white;
+
+
+
+ }
+ #sign:hover{
+     background-color: grey;
+     box-shadow: 2px 2px 2px 2px  grey;
+     cursor: pointer;
+ }
+
+    </style>
+</head>
+<body>
+<div class="header ">
+ <span id="face">facebook</span>
+ <div class="fill">
+<table>
+<tr>
+    <td>Email or phone</td>
+    <td colspan="2">Password</td>
+
+</tr>
+<tr>
+<td ><input type="text"></td>
+<td><input type="text"></td>
+<td ><input type="button" 
+    style="background-color:lightblue;border: 1px solid dimgrey;"value="login"></td>
+
+</tr>
+<tr>
+    <td></td>
+    <td style="color:darkgray; ">Forgotten your password?<td>
+</tr>
+
+</table>
+
+
+ </div>
+
+
+</div>
+<div >
+
+    
+            <div class="align" >
+                <span style="color:dodgerblue;">
+                Facebook helps you connect and share
+                with the people in your life.
+                </span>
+                <div>
+                <img src="https://i.pinimg.com/236x/fb/75/fb/fb75fb1d6bf314943f5a6183b440c033.jpg" 
+                alt="ảnh cartoon" width="500px" height="300px">
+                </div>
+            </div>
+            <div class="align">
+<h1>Create an account</h1>
+<h2 style="color:slategray">it's quick and easy</h2>
+<input type="text" placeholder="first name">
+<input type="text" placeholder=" surname">
+<div><input type="text" 
+    placeholder="Mobile number or email address" style="margin-top:10px;width:325px">
+</div>
+<div><input type="text" 
+    placeholder="New password" style="margin-top:10px;width:325px">
+</div>
+<div style="color:slategray;margin-top:10px;margin-bottom:5px;">
+   
+Date of birth
+</div> 
+<select name="day">
+<option value="day">day</option>
+    </select>
+ <select name="day">
+        <option value="month">month</option>
+         </select>
+<select name="year">
+         <option value="year">year</option>
+      </select>
+      <div style="color: slategray;margin-top:5px;">Gender</div>
+<input type="radio" name="gender" >Nam
+<input type="radio" name="gender">Nữ
+
+<div style="font-size:12px ; margin-top:5px;color:slategray">
+    By clicking Sign Up, you agree to our<a href="#" style="text-decoration: none;"> Terms</a>,<a href="#" style="text-decoration: none;"> Data Policy </a> and</br>
+    <a href="#" style="text-decoration: none;"> Cookie Policy</a>. You may receive SMS notifications from us and</br>
+      can opt out at any time.
+
+
+</div>
+
+<input type="button" value="Sign Up" id="sign">
+</div>
+
+</div>
+
+
+</body>
+</html>
