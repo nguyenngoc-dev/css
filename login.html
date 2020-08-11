@@ -69,25 +69,22 @@ top:40px;
 
 
 }
-img
+#img
 {
     width:100%;
     position: relative;
     border:1px solid dimgray;
     box-shadow: 2px 2px lightblue;
     transition: width 2s,height 2s, transform 2s;
-    animation: example 2s linear 1 2 ;
+    
 }
-img:hover{
+#img:hover{
     width:300px;
     height:300px;
     transform:rotate(360deg);
 
  }
- @keyframes example {
-     from{top:100px;left:100px;}
-     to{  top:500px; left:500px;}
- }
+ 
  .align h1{
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
      top:-20px;
@@ -111,6 +108,70 @@ img:hover{
      box-shadow: 2px 2px 2px 2px  grey;
      cursor: pointer;
  }
+ #image{
+     margin-left:170px;
+     position: absolute;
+     margin-top:-60px;
+     
+ }
+ .animation
+ {
+    background:url('https://i.pinimg.com/originals/46/34/21/4634212f6d84a54be4b58775ba1da53c.gif')
+    no-repeat center;
+    border:1px solid #29487d;
+    background-size:cover;
+    width:100px;
+    height:100px;
+    position: absolute;
+    top: 450px;
+    left:0;
+    animation: example 4s linear  0s infinite ;
+    border-radius: 100%;
+
+
+
+ }
+ @keyframes example {
+     
+ 
+     0%{top:450px;left:0px;}
+     25%{top:450px;left:100px;}
+     50%{top:600px;left:100px;}
+     75%{top:600px;left:0px;}
+     100%{top:450px;left:0px;}
+
+     
+ }
+ .animation1
+ {
+    background:url('https://thuthuatnhanh.com/wp-content/uploads/2020/04/tao-anh-gif-online.gif')
+    no-repeat center;
+    border:1px solid #29487d;
+    background-size:cover;
+    width:100px;
+    height:100px;
+    position: absolute;
+    top: 450px;
+    left:300px;
+    animation: example1 4s linear  0s infinite ;
+    border-radius: 100%;
+
+
+
+ }
+ @keyframes example1 {
+     
+ 
+     0%{top:450px;left:370px;}
+     25%{top:450px;left:250px;}
+     50%{top:600px;left:250px;}
+     75%{top:600px;left:370px;}
+     100%{top:450px;left:370px;}
+
+     
+ }
+
+
 
     </style>
 </head>
@@ -152,7 +213,7 @@ img:hover{
                 with the people in your life.
                 </span>
                 <div>
-                <img src="https://i.pinimg.com/236x/fb/75/fb/fb75fb1d6bf314943f5a6183b440c033.jpg" 
+                <img id="img" src="https://i.pinimg.com/236x/fb/75/fb/fb75fb1d6bf314943f5a6183b440c033.jpg" 
                 alt="ảnh cartoon" width="500px" height="300px">
                 </div>
             </div>
@@ -195,6 +256,13 @@ Date of birth
 <input type="button" value="Sign Up" id="sign">
 </div>
 
+<div id="image">
+<div class="animation">
+
+</div >
+<div class="animation1" >
+    
+</div>
 </div>
 
 
