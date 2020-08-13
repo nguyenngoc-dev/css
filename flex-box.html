@@ -1,0 +1,222 @@
+<!-- flex-box -->
+
+
+
+<DOCTYPE! html>
+
+<html>
+
+<head>
+<title>flex-box</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        font-family: sans-serif;
+        margin: 0;
+    }
+    .header{
+        text-align: center;
+        color:black;
+        background-color: rgb(238, 247, 246);
+        padding:50px;
+    }
+    .list{
+        display: flex;
+        background-color: slategray;
+    }
+    .list a{
+        color:white;
+        text-decoration: none;
+        padding:5px;
+        border:1px solid  slategray;
+
+    }
+
+     a:hover{
+        background-color:black;
+    }
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .first{
+        flex: 30%;
+        background-color: rgb(238, 247, 246);
+        padding:20px;
+    }
+    .second{
+        flex:70%;
+        padding:20px;
+        background-color: rgb(238, 247, 246);
+    }
+    tr:nth-child(even){
+        background-color:darkgrey;
+
+    }
+     td,th{
+        border-bottom:darkgrey;
+        height: 40px;;
+      
+    
+    }
+    th{
+        background-color: darkkhaki;
+    }
+    tr:hover:not(th){
+        background-color: grey;
+    }
+    .animation{
+        animation: example 2s linear 0s infinite ;
+        position: relative;
+
+    }
+    @keyframes example {
+        from{left:0px}
+        to{left:40%}
+    }
+    .animation1{
+        animation: example1 2s linear 0s infinite ;
+        position: relative;
+        left:790px;
+    }
+    @keyframes example1 {
+        from{left:790px}
+        to{left:40%}
+    }
+    .pagination{
+        position: relative;
+        text-align: center;
+        padding:20px;
+    }
+    .pagination a{
+        text-decoration: none;
+        border:1px solid grey;
+        font-size: 20px;
+        padding:10px;
+        
+
+    }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>My website</h1> 
+        <p>With <b>flexible </b>layout</p> 
+    </div>
+    <div class="list">
+        
+            <a href="#">Home</a>
+            <a href="#">Course</a>
+            <a href="#">free</a> 
+            <a href="#">online</a>
+            <a href="#" style="text-align: right;">translate</a>
+
+    </div>
+<div class="main">
+    <div class="first">
+            <h2>About me</h2>
+            <p>follow me</p>
+            <img src="https://thuthuatnhanh.com/wp-content/uploads/2020/04/tao-anh-gif-online.gif"
+            alt="anh dong" width="400px" height="200px">
+    <p>it's so cute right</p>
+    <img src="https://i.pinimg.com/originals/46/34/21/4634212f6d84a54be4b58775ba1da53c.gif"
+            alt="anh dong" width="400px" height="200px">
+            <p>This is one more haha!!!!</p>
+    </div>
+    <div class="second">
+            <h2>Family Generation Present</h2>
+            <p id="text"> </p>
+            <table style="border-collapse: collapse; margin-top:10px;float:left;width:100%;">
+             <tr>
+                <th>Property</th>
+                <th>My Father</th>
+                <th>My Mother</th>
+                <th>My sister</th>
+                <th>My brother</th>
+                <th>Me</th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>Nguyễn Văn Ninh</td>
+                <td>Đào Thị Nhung</td>
+                <td>Nguyễn Thị Ánh</td>
+                <td>Nguyễn Văn Huy</td>
+                <td>Nguyễn Văn Ngọc</td>
+
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td>40</td>
+                <td>37</td>
+                <td>22</td>
+                <td>4</td>
+                <td>19</td>
+
+            </tr>
+            <tr>
+                <td>Job</td>
+                <td>Worker</td>
+                <td>Home maker</td>
+                <td>Worker</td>
+                <td>eat and play</td>
+                <td>student</td>
+
+            </tr>
+            <tr>
+                <td>personality</td>
+                <td>strict</td>
+                <td>comfortable</td>
+                <td>uncomfortable</td>
+                <td>funny and clever</td>
+                <td>quite friendly</td>
+
+            </tr>
+            </table>
+            <div style="text-align: center;">
+                <img src="https://1.bp.blogspot.com/-pBeUKQEbSqA/UMQld0P6shI/AAAAAAAATco/-pQfcWau1hE/s1600/Anh-dong-trai-tim-+(8).gif"
+                 alt="ảnh tình thương" width="400px" height="200px">
+                 <img src="https://3.bp.blogspot.com/-mXmCQUhlwok/V8r_5rkePNI/AAAAAAAGB6Y/v0roObSm24IjUnaM_e_s348GAlPvIp5AACLcB/s1600/CORAZONES%2B%2528284%2529.gif"
+                 alt="ảnh tình thương" width="500px" height="200px">
+            </div>
+            <div  style="margin-top:10px;background-color: white;">
+            <img class="animation" src="https://img.lovepik.com/element/40109/7459.png_860.png"
+             alt="bắn tim" width="100px" height="70px">
+             <img  class="animation1" src="https://img.lovepik.com/element/40109/7459.png_860.png"
+             alt="bắn tim" width="100px" height="70px" style="transform:scaleX(-1)">
+            </div>
+
+    </div>
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">&raquo;</a>
+    </div>
+
+
+
+</div>
+<script>
+   function update()
+{
+var date=new Date();
+
+var text = document.getElementById('text');
+text.innerHTML = date;
+
+
+
+}
+setInterval(update,1000);
+
+
+</script>
+   
+</body>
+</html>
